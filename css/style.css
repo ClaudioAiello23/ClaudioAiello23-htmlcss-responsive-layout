@@ -16,11 +16,11 @@ REGOLE DI SETUP (DA DISATTIVARE)
     height: 50px;
 } */
 
-/* .box-intro{
-    height: 200px; 
-    width: 100px; 
+.box-intro{
+    /* height: 200px; 
+    width: 100px;  */
     border: 1px solid black;
-} */
+} 
 
 
 /* 
@@ -142,18 +142,8 @@ MAIN
 .box-intro{
     background-color: var(--first-color-light);
     padding: 30px;
-    border-radius: 20px;
 }
 
-.box-intro:first-child{
-    border-bottom-left-radius: 0%;
-    border-bottom-right-radius: 0%;
-}
-
-.box-intro:nth-child(2){
-    border-top-left-radius: 0%;
-    border-top-right-radius: 0%;
-}
 
 .box-intro .intro-content{
     padding: 20px 0;
@@ -192,10 +182,38 @@ MAIN
 .content-align{
     text-align: center;
     margin: 20px 0;
+    border-radius: 20px;
+}
+
+.box-intro:first-child{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.box-intro:nth-child(2){
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 /* MEDIA QUERIES - RESPONSIVE SETTINGS */
-/* Regole per allineamento Main introduttivo versione tablet */
+/* Regole per allineamento Main intro versione tablet */
+@media screen and (min-width: 768px) {
+    .main-intro .row{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
-/* Regole per allineamento Main introduttivo versione desktop */
+    .box-intro{
+        width: calc(100% / 3 - 20px);
+        margin: 10px;
+    }
+
+   /* DA RIFARE */
+}
+
+/* Regole per allineamento Main intro versione desktop */
+@media screen and (min-width: 992px) {
+    
+}
+/* DA RIFARE */
 
