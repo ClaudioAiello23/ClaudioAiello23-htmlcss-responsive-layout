@@ -6,9 +6,20 @@ Regole introduttive esercizio:
 
 
 /* 
-*******************************
+**************************************************************
+REGOLE DI SETUP (DA DISATTIVARE)
+**************************************************************
+*/
+
+
+/* header{
+    height: 50px;
+} */
+
+/* 
+**************************************************************
 REGOLE DI RESET
-*******************************
+**************************************************************
 */
 
 *{
@@ -19,7 +30,77 @@ REGOLE DI RESET
 
 
 /* 
-*******************************
-REGOLE DI SETUP (DA DISATTIVARE)
-*******************************
+**************************************************************
+REGOLE DI COMMON
+**************************************************************
 */
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.f-between{
+    justify-content: space-between;
+}
+
+
+/* 
+**************************************************************
+HEADER
+**************************************************************
+*/
+
+header{
+    color: white;
+    background-color:#0084fd;
+}
+
+header .container{
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .fa-bars{
+    font-size: 18px;
+}
+
+.desktop-menu a{
+    text-decoration: none;
+    color: white;
+}
+
+.desktop-menu li{
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.desktop-menu ul li:last-child{
+    background-color: white;
+    border-radius: 20px;
+    padding: 7px;
+}
+
+.desktop-menu .h-button{
+    color:black;
+}
+
+
+/* Regole per comparsa Menu dettagliato versione desktop */
+@media screen and (max-width: 991px) {
+    header .desktop-menu{
+        display: none;
+    }
+}
+
+/* Regole per comparsa Menu Bars versione tablet/mobile */
+@media screen and (min-width: 992px) {
+    header .fa-bars{
+        display: none;
+    }
+}
