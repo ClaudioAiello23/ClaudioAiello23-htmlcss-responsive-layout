@@ -16,6 +16,13 @@ REGOLE DI SETUP (DA DISATTIVARE)
     height: 50px;
 } */
 
+/* .box-intro{
+    height: 200px; 
+    width: 100px; 
+    border: 1px solid black;
+} */
+
+
 /* 
 **************************************************************
 REGOLE DI RESET
@@ -35,6 +42,14 @@ REGOLE DI COMMON
 **************************************************************
 */
 
+/* Impostazione colori presenti nella bozza, con le variabili */
+:root{
+    --first-color: #0084fd;
+    --first-color-light: #b5ddff;
+    --second-color: #9792e4;
+    --third-color: #333333;
+}
+
 .container{
     max-width: 80%;
     margin: 0 auto;
@@ -48,6 +63,15 @@ REGOLE DI COMMON
     justify-content: space-between;
 }
 
+h4{
+    font-size: 20px;
+}
+
+.awesome-icon{
+    font-size: 100px;
+    color: var(--first-color)
+}
+
 
 /* 
 **************************************************************
@@ -57,7 +81,8 @@ HEADER
 
 header{
     color: white;
-    background-color:#0084fd;
+    background-color: var(--first-color);
+    margin-bottom: 30px;
 }
 
 header .container{
@@ -90,8 +115,8 @@ header .fa-bars{
     color:black;
 }
 
-
-/* Regole per comparsa Menu dettagliato versione desktop */
+/* MEDIA QUERIES - RESPONSIVE SETTINGS 
+Regole per comparsa Menu dettagliato versione desktop */
 @media screen and (max-width: 991px) {
     header .desktop-menu{
         display: none;
@@ -104,3 +129,73 @@ header .fa-bars{
         display: none;
     }
 }
+
+
+/* 
+**************************************************************
+MAIN
+**************************************************************
+*/
+
+/* Sezione Main Introduttiva */
+
+.box-intro{
+    background-color: var(--first-color-light);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.box-intro:first-child{
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+.box-intro:nth-child(2){
+    border-top-left-radius: 0%;
+    border-top-right-radius: 0%;
+}
+
+.box-intro .intro-content{
+    padding: 20px 0;
+}
+
+.box-intro p{
+    line-height: 25px;
+}
+
+.main-intro .row, .main-intro .col{
+    flex-direction: column;
+}
+
+.main-intro h4{
+    color: var(--first-color);
+}
+
+.box-intro .m-button {
+    background-color: var(--first-color);
+    border-radius: 20px;
+    padding: 7px;
+    width: 70%;
+    text-align: center;
+}
+
+.box-intro a{
+    text-decoration: none;
+    color: white;
+}
+
+.box-intro img{
+    max-width: 100%;
+}
+
+
+.content-align{
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* MEDIA QUERIES - RESPONSIVE SETTINGS */
+/* Regole per allineamento Main introduttivo versione tablet */
+
+/* Regole per allineamento Main introduttivo versione desktop */
+
