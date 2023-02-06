@@ -290,5 +290,52 @@ Regole per comparsa Main sez. Planning versione desktop */
 }
   
 
+/* Sezione Main Testimonials */
 
+.testimonial-intro{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-intro > *{
+    padding: 20px 0;
+}
+
+.testimonial-intro h3{
+    color:var(--second-color)
+}
+
+.testimonials .container{
+    flex-direction: column;
+}
+
+.testimonials img{
+    max-width: 100%;
+    width: 50%;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.client-box > *{
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+.client-box{
+    flex-direction: column;
+    background-color: var(--second-color);
+    border-radius: 40px;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.client-name{
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES - RESPONSIVE SETTINGS 
+Regole per comparsa Main sez. Planning versione desktop */
 
