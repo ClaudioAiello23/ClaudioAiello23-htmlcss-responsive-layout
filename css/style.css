@@ -1,0 +1,25 @@
+/* 
+Regole introduttive esercizio:
+- Approccio Responsive: Mobile First
+- Regole di Breakpoint: tablet da 768px, desktop da 62rem 
+*/
+
+
+/* 
+*******************************
+REGOLE DI RESET
+*******************************
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* 
+*******************************
+REGOLE DI SETUP (DA DISATTIVARE)
+*******************************
+*/
