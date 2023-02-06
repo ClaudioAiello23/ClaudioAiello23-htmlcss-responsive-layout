@@ -80,6 +80,10 @@ p{
     line-height: 150%;
 }
 
+.br-40{
+    border-radius: 40px;
+}
+
 
 /* 
 **************************************************************
@@ -147,6 +151,7 @@ MAIN
 
 /* Sezione Main Introduttiva */
 
+
 .box-intro{
     background-color: var(--first-color-light);
     padding: 30px;
@@ -167,7 +172,6 @@ MAIN
 
 .box-intro .m-button {
     background-color: var(--first-color);
-    border-radius: 20px;
     padding: 7px;
     width: 70%;
     text-align: center;
@@ -186,7 +190,6 @@ MAIN
 .content-align{
     text-align: center;
     margin: 20px 0;
-    border-radius: 20px;
 }
 
 .box-intro:first-child{
@@ -197,6 +200,10 @@ MAIN
 .box-intro:nth-child(2){
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+}
+
+.main-intro{
+    margin-bottom: 50px;
 }
 
 /* MEDIA QUERIES - RESPONSIVE SETTINGS */
@@ -249,14 +256,13 @@ MAIN
 
  .planning-bottom > *{
     text-align: center;
-    margin: 30px 0;
+    margin: 10px 0;
  }
 
  .planning-bottom{
-    border-radius: 40px;
     background-color: white;
     padding: 40px;
-    position:relative;
+    position: relative;
  }
 
  .fa-arrow-down{
@@ -274,7 +280,7 @@ Regole per comparsa Main sez. Planning versione desktop */
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
-        padding: 50px 0;
+        /* padding: 50px 0; */
     }
 
     .planning .col{
@@ -307,6 +313,7 @@ Regole per comparsa Main sez. Planning versione desktop */
 
 .testimonials .container{
     flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .testimonials img{
@@ -324,7 +331,6 @@ Regole per comparsa Main sez. Planning versione desktop */
 .client-box{
     flex-direction: column;
     background-color: var(--second-color);
-    border-radius: 40px;
     color: white;
     padding: 20px;
     margin: 20px 0;
@@ -336,7 +342,7 @@ Regole per comparsa Main sez. Planning versione desktop */
 
 
 /* MEDIA QUERIES - RESPONSIVE SETTINGS 
-Regole per comparsa Main sez. Testimonials versione tablet */
+Regole per comparsa Main sez. Testimonials versione tablet/desktop */
 @media screen and (min-width: 768px){
     .client-box{
         flex-direction: row;
@@ -353,6 +359,91 @@ Regole per comparsa Main sez. Testimonials versione tablet */
         padding: 0;
     }
 }
+
+
+/* Sezione Main Benefits */
+
+.benefits{
+    background-color: var(--second-color);
+}
+
+.benefits .container{
+    flex-direction: column;
+}
+
+.benefits h3{
+    color:white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.benefits-box{
+    background-color: white;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+}
+
+.benefits-box > *{
+    margin: 20px 0;
+}
+
+.box-number{
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.benefits h4{
+    color: var(--second-color);
+}
+
+.benefits-button{
+    background-color: var(--second-color);
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+.benefits-button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERIES - RESPONSIVE SETTINGS 
+Regole per comparsa Main sez. Benefits versione tablet */
+
+@media screen and (min-width: 768px){
+    .benefits .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefits .benefits-box{
+        width: calc(100%/2 - 20px);
+        margin: 10px 10px;
+    }
+}
+
+/* Regole per comparsa Main sez. Benefits versione desktop  */
+
+@media screen and (min-width: 992px){
+    .benefits .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefits .benefits-box{
+        width: calc(100%/3 - 40px);
+        margin: 10px 10px;
+    }
+}
+
+
+
 
 
 
