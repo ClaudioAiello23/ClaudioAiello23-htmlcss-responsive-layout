@@ -319,7 +319,6 @@ Regole per comparsa Main sez. Planning versione desktop */
 .client-box > *{
     padding: 10px 0;
     text-align: center;
-
 }
 
 .client-box{
@@ -337,5 +336,23 @@ Regole per comparsa Main sez. Planning versione desktop */
 
 
 /* MEDIA QUERIES - RESPONSIVE SETTINGS 
-Regole per comparsa Main sez. Planning versione desktop */
+Regole per comparsa Main sez. Testimonials versione tablet */
+@media screen and (min-width: 768px){
+    .client-box{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .client-box p{
+        text-align: start;
+        padding: 0 30px;
+    }
+
+    .testimonial-intro{
+        padding: 0;
+    }
+}
+
+
 
