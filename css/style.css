@@ -59,10 +59,6 @@ REGOLE DI COMMON
     display: flex;
 }
 
-.f-between{
-    justify-content: space-between;
-}
-
 h2{
     font-size: 2.5rem;
 }
@@ -88,6 +84,10 @@ p{
     border-radius: 40px;
 }
 
+.f-column{
+    flex-direction: column;
+}
+
 
 /* 
 **************************************************************
@@ -103,6 +103,7 @@ header{
 
 header .container{
     align-items: center;
+    justify-content: space-between;
     padding: 10px 0;
 }
 
@@ -127,7 +128,7 @@ header .fa-bars{
     padding: 7px;
 }
 
-.desktop-menu .h-button{
+.desktop-menu #h-button{
     color:black;
 }
 
@@ -166,9 +167,9 @@ MAIN
     padding: 20px 0;
 }
 
-.main-intro .row, .main-intro .col{
+/* .main-intro .row{
     flex-direction: column;
-}
+} */
 
 .main-intro h4{
     color: var(--first-color);
@@ -210,6 +211,9 @@ MAIN
     margin-bottom: 50px;
 }
 
+
+/* NB DA SISTEMARE PARTE RESPONSIVE DELLA SEZ. MAIN INTRO*/
+
 /* MEDIA QUERIES - RESPONSIVE SETTINGS */
 /* Regole per allineamento Main intro versione tablet */
 @media screen and (min-width: 768px) {
@@ -222,15 +226,13 @@ MAIN
         width: calc(100% / 3 - 20px);
         margin: 10px;
     }
-
-   /* DA RIFARE */
 }
 
 /* Regole per allineamento Main intro versione desktop */
 @media screen and (min-width: 992px) {
     
 }
-/* DA RIFARE */
+
 
 
 
@@ -284,7 +286,6 @@ Regole per comparsa Main sez. Planning versione desktop */
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-end;
-        /* padding: 50px 0; */
     }
 
     .planning .col{
@@ -316,7 +317,6 @@ Regole per comparsa Main sez. Planning versione desktop */
 }
 
 .testimonials .container{
-    flex-direction: column;
     margin-bottom: 50px;
 }
 
@@ -333,7 +333,6 @@ Regole per comparsa Main sez. Planning versione desktop */
 }
 
 .client-box{
-    flex-direction: column;
     background-color: var(--second-color);
     color: white;
     padding: 20px;
@@ -369,10 +368,6 @@ Regole per comparsa Main sez. Testimonials versione tablet/desktop */
 
 .benefits{
     background-color: var(--second-color);
-}
-
-.benefits .container{
-    flex-direction: column;
 }
 
 .benefits h3{
@@ -450,10 +445,6 @@ Regole per comparsa Main sez. Benefits versione tablet */
 
 /* Sezione Main About Us */
 
-.about-us .container{
-    flex-direction: column;
-}
-
 .about-us h2{
     color: var(--second-color);
 }
@@ -508,11 +499,5 @@ Regole per comparsa Main sez. About Us versione tablet/desktop */
     .about-us .col{
         padding: 50px 0;
     }
-
-
-
-
-   
-
 }
 
